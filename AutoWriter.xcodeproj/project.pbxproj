@@ -11,12 +11,17 @@
 		5E580E9761D12BE91F4E81E3 /* Pods_AutoWriterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94C27274ED4F93C25168DE0 /* Pods_AutoWriterTests.framework */; };
 		69C1FBED1412D2E3F0A908B9 /* Pods_AutoWriter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97F846757FB91FF43250E0 /* Pods_AutoWriter.framework */; };
 		C4AC4E9A215752660051E1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4E99215752660051E1FA /* AppDelegate.swift */; };
-		C4AC4E9C215752660051E1FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4E9B215752660051E1FA /* ViewController.swift */; };
+		C4AC4E9C215752660051E1FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4E9B215752660051E1FA /* MainViewController.swift */; };
 		C4AC4E9F215752660051E1FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AC4E9D215752660051E1FA /* Main.storyboard */; };
 		C4AC4EA1215752660051E1FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AC4EA0215752660051E1FA /* Assets.xcassets */; };
 		C4AC4EA4215752660051E1FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AC4EA2215752660051E1FA /* LaunchScreen.storyboard */; };
 		C4AC4EAF215752660051E1FA /* AutoWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4EAE215752660051E1FA /* AutoWriterTests.swift */; };
 		C4AC4EBA215752660051E1FA /* AutoWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4EB9215752660051E1FA /* AutoWriterUITests.swift */; };
+		C4BB5EFF215760C200F8D449 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB5EFE215760C200F8D449 /* ConnectionService.swift */; };
+		C4BB5F002157611F00F8D449 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BB5F012157611F00F8D449 /* Alamofire.framework */; };
+		C4BB5F022157614000F8D449 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BB5F032157614000F8D449 /* RealmSwift.framework */; };
+		C4BB5F052157628300F8D449 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB5F042157628300F8D449 /* MainViewPresenter.swift */; };
+		C4BB5F07215768D000F8D449 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB5F06215768D000F8D449 /* RequestProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +50,7 @@
 		B75BCDB0BF94B316CC370FA9 /* Pods-AutoWriterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoWriterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoWriterUITests/Pods-AutoWriterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4AC4E96215752660051E1FA /* AutoWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AC4E99215752660051E1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4AC4E9B215752660051E1FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4AC4E9B215752660051E1FA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C4AC4E9E215752660051E1FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4AC4EA0215752660051E1FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4AC4EA3215752660051E1FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +61,11 @@
 		C4AC4EB5215752660051E1FA /* AutoWriterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoWriterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AC4EB9215752660051E1FA /* AutoWriterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoWriterUITests.swift; sourceTree = "<group>"; };
 		C4AC4EBB215752660051E1FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4BB5EFE215760C200F8D449 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionService.swift; path = ../ConnectionService.swift; sourceTree = "<group>"; };
+		C4BB5F012157611F00F8D449 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BB5F032157614000F8D449 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BB5F042157628300F8D449 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		C4BB5F06215768D000F8D449 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		D2A4CD6C316B6F5CDE1D71D7 /* Pods-AutoWriterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoWriterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoWriterTests/Pods-AutoWriterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E94C27274ED4F93C25168DE0 /* Pods_AutoWriterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoWriterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A659CE97E8561773B21B13 /* Pods-AutoWriterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoWriterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoWriterUITests/Pods-AutoWriterUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BB5F022157614000F8D449 /* RealmSwift.framework in Frameworks */,
+				C4BB5F002157611F00F8D449 /* Alamofire.framework in Frameworks */,
 				69C1FBED1412D2E3F0A908B9 /* Pods_AutoWriter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +117,8 @@
 		C04282739C3DD79324AF0CE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4BB5F032157614000F8D449 /* RealmSwift.framework */,
+				C4BB5F012157611F00F8D449 /* Alamofire.framework */,
 				5C97F846757FB91FF43250E0 /* Pods_AutoWriter.framework */,
 				E94C27274ED4F93C25168DE0 /* Pods_AutoWriterTests.framework */,
 				4962102B22E65E50F371BFEF /* Pods_AutoWriterUITests.framework */,
@@ -138,11 +152,14 @@
 			isa = PBXGroup;
 			children = (
 				C4AC4E99215752660051E1FA /* AppDelegate.swift */,
-				C4AC4E9B215752660051E1FA /* ViewController.swift */,
+				C4AC4E9B215752660051E1FA /* MainViewController.swift */,
+				C4BB5F042157628300F8D449 /* MainViewPresenter.swift */,
 				C4AC4E9D215752660051E1FA /* Main.storyboard */,
+				C4BB5EFD2157608500F8D449 /* ConnectionService */,
 				C4AC4EA0215752660051E1FA /* Assets.xcassets */,
 				C4AC4EA2215752660051E1FA /* LaunchScreen.storyboard */,
 				C4AC4EA5215752660051E1FA /* Info.plist */,
+				C4BB5F06215768D000F8D449 /* RequestProtocol.swift */,
 			);
 			path = AutoWriter;
 			sourceTree = "<group>";
@@ -163,6 +180,14 @@
 				C4AC4EBB215752660051E1FA /* Info.plist */,
 			);
 			path = AutoWriterUITests;
+			sourceTree = "<group>";
+		};
+		C4BB5EFD2157608500F8D449 /* ConnectionService */ = {
+			isa = PBXGroup;
+			children = (
+				C4BB5EFE215760C200F8D449 /* ConnectionService.swift */,
+			);
+			path = ConnectionService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,15 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AutoWriterUITests-checkManifestLockResult.txt",
 			);
@@ -326,15 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AutoWriterTests-checkManifestLockResult.txt",
 			);
@@ -348,15 +365,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AutoWriter-checkManifestLockResult.txt",
 			);
@@ -370,8 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AutoWriter/Pods-AutoWriter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -379,8 +390,6 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -398,8 +407,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AC4E9C215752660051E1FA /* ViewController.swift in Sources */,
+				C4BB5EFF215760C200F8D449 /* ConnectionService.swift in Sources */,
+				C4AC4E9C215752660051E1FA /* MainViewController.swift in Sources */,
+				C4BB5F052157628300F8D449 /* MainViewPresenter.swift in Sources */,
 				C4AC4E9A215752660051E1FA /* AppDelegate.swift in Sources */,
+				C4BB5F07215768D000F8D449 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
