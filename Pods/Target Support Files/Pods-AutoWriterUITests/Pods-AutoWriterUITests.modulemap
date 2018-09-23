@@ -1,0 +1,6 @@
+framework module Pods_AutoWriterUITests {
+  umbrella header "Pods-AutoWriterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
