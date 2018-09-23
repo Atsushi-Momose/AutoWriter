@@ -13,12 +13,13 @@ class MainViewPresenter {
     
     func getCurrencyInfo() {
         
-        ConnectionService.shared.getCurrencyInfoList(success: {(result: Dictionary<String, AnyObject>) -> Void in
+        ConnectionService.shared.fetchCurrencyInfoList(success: {(result: Dictionary<String, AnyObject>) -> Void in
             
             
         }, failure: {(result: Error?) -> Void in
             
-           
         })
     }
+    
+    func fetch
 }

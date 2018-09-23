@@ -16,7 +16,7 @@ class ConnectionService {
     static var shared = ConnectionService()
     private init() {}
     
-    func getCurrencyInfoList(success: @escaping (Dictionary<String, AnyObject>) -> Void, failure: @escaping (Error?) -> Void) {
+    func fetchCurrencyInfoList(success: @escaping (Dictionary<String, AnyObject>) -> Void, failure: @escaping (Error?) -> Void) {
 //            let baseUrl = request.baseUrl
 //            let path = request.pat
 //            let requestUrl = baseUrl + path

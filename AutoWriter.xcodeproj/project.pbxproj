@@ -220,6 +220,7 @@
 				C4AC4EA6215752660051E1FA /* Sources */,
 				C4AC4EA7215752660051E1FA /* Frameworks */,
 				C4AC4EA8215752660051E1FA /* Resources */,
+				DECF2B2AE8078F05C99F1D41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +359,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECF2B2AE8078F05C99F1D41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AutoWriterTests/Pods-AutoWriterTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV1/Assistant.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonConversationV1/Conversation.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonDiscoveryV1/Discovery.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonLanguageTranslatorV3/LanguageTranslator.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageClassifierV1/NaturalLanguageClassifier.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageUnderstandingV1/NaturalLanguageUnderstanding.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonTextToSpeechV1/TextToSpeech.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonVisualRecognitionV3/VisualRecognition.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Assistant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Conversation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Discovery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LanguageTranslator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaturalLanguageClassifier.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaturalLanguageUnderstanding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PersonalityInsights.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpeechToText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextToSpeech.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ToneAnalyzer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VisualRecognition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoWriterTests/Pods-AutoWriterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8DBDB26E89B8189FB8D9156 /* [CP] Check Pods Manifest.lock */ = {
