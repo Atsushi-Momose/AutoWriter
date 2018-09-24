@@ -1,88 +1,26 @@
 PODS:
   - Alamofire (4.7.3)
-  - IBMWatsonAssistantV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonConversationV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonDiscoveryV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonLanguageTranslatorV3 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonNaturalLanguageClassifierV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonNaturalLanguageUnderstandingV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonPersonalityInsightsV3 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonRestKit (1.2.0)
-  - IBMWatsonSpeechToTextV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-    - Starscream (~> 3.0)
-  - IBMWatsonTextToSpeechV1 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonToneAnalyzerV3 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
-  - IBMWatsonVisualRecognitionV3 (0.34.0):
-    - IBMWatsonRestKit (= 1.2.0)
   - Realm (3.10.0):
     - Realm/Headers (= 3.10.0)
   - Realm/Headers (3.10.0)
   - RealmSwift (3.10.0):
     - Realm (= 3.10.0)
-  - Starscream (3.0.5)
 
 DEPENDENCIES:
   - Alamofire
-  - IBMWatsonAssistantV1 (~> 0.34.0)
-  - IBMWatsonConversationV1 (~> 0.34.0)
-  - IBMWatsonDiscoveryV1 (~> 0.34.0)
-  - IBMWatsonLanguageTranslatorV3 (~> 0.34.0)
-  - IBMWatsonNaturalLanguageClassifierV1 (~> 0.34.0)
-  - IBMWatsonNaturalLanguageUnderstandingV1 (~> 0.34.0)
-  - IBMWatsonPersonalityInsightsV3 (~> 0.34.0)
-  - IBMWatsonSpeechToTextV1 (~> 0.34.0)
-  - IBMWatsonTextToSpeechV1 (~> 0.34.0)
-  - IBMWatsonToneAnalyzerV3 (~> 0.34.0)
-  - IBMWatsonVisualRecognitionV3 (~> 0.34.0)
   - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - IBMWatsonAssistantV1
-    - IBMWatsonConversationV1
-    - IBMWatsonDiscoveryV1
-    - IBMWatsonLanguageTranslatorV3
-    - IBMWatsonNaturalLanguageClassifierV1
-    - IBMWatsonNaturalLanguageUnderstandingV1
-    - IBMWatsonPersonalityInsightsV3
-    - IBMWatsonRestKit
-    - IBMWatsonSpeechToTextV1
-    - IBMWatsonTextToSpeechV1
-    - IBMWatsonToneAnalyzerV3
-    - IBMWatsonVisualRecognitionV3
     - Realm
     - RealmSwift
-    - Starscream
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  IBMWatsonAssistantV1: 76b2820457ac6e9a5f71eddc6dfb932d9de7ba8f
-  IBMWatsonConversationV1: 30050ba675c3b87e16b70e36230b2d51a5608695
-  IBMWatsonDiscoveryV1: 000baef5389fa03598a4d57e62c7e26b4901cf19
-  IBMWatsonLanguageTranslatorV3: 9b881075166b887abcc51b9cb70f9b49ca53df01
-  IBMWatsonNaturalLanguageClassifierV1: bdf3f0dcabdd62ebfa32dd57515060b12e6dd5e2
-  IBMWatsonNaturalLanguageUnderstandingV1: 3026d34b504ab6063bcff6cca53e1e2a4eac9c26
-  IBMWatsonPersonalityInsightsV3: b9bd81eef2ba285e8176b9a296a9f018f03f0e77
-  IBMWatsonRestKit: b05aa0aa912724accbf6ed9475654602886f0782
-  IBMWatsonSpeechToTextV1: 0f4843bd1384d6d0c618e47a7d492c54a3a88592
-  IBMWatsonTextToSpeechV1: dd4de9ac91b1fd63c4e4d2f2b60f3d8bfbc83bf1
-  IBMWatsonToneAnalyzerV3: df1da654cb38ec71d37fad649ba82ecadf7a3f24
-  IBMWatsonVisualRecognitionV3: aed88965e4589c1b4d674685c2220350d57f941c
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
-  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
 
-PODFILE CHECKSUM: 52a4922ad9c7bded3c8c3971b2d8dad37a987126
+PODFILE CHECKSUM: 053c9688917edcd8d9bef1710aed8b5c7053fb22
 
 COCOAPODS: 1.5.3

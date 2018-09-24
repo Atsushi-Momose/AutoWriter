@@ -141,37 +141,6 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV1/Assistant.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonConversationV1/Conversation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonDiscoveryV1/Discovery.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonLanguageTranslatorV3/LanguageTranslator.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageClassifierV1/NaturalLanguageClassifier.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageUnderstandingV1/NaturalLanguageUnderstanding.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonTextToSpeechV1/TextToSpeech.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonVisualRecognitionV3/VisualRecognition.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV1/Assistant.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonConversationV1/Conversation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonDiscoveryV1/Discovery.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonLanguageTranslatorV3/LanguageTranslator.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageClassifierV1/NaturalLanguageClassifier.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageUnderstandingV1/NaturalLanguageUnderstanding.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonTextToSpeechV1/TextToSpeech.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonVisualRecognitionV3/VisualRecognition.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
-fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
