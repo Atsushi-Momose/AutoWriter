@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photoライブラリにアクセスします</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>AppleMusicを使用します</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Bluetoothを使用します</string>
+	<key>NSCameraUsageDescription</key>
+	<string>カメラを使用します</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>マイクを使用します</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>音声認識機能を使用します</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

@@ -1,16 +1,28 @@
 PODS:
   - Alamofire (4.7.3)
+  - GradientCircularProgress (3.10.0)
 
 DEPENDENCIES:
   - Alamofire
+  - GradientCircularProgress (from `https://github.com/keygx/GradientCircularProgress`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
 
+EXTERNAL SOURCES:
+  GradientCircularProgress:
+    :git: https://github.com/keygx/GradientCircularProgress
+
+CHECKOUT OPTIONS:
+  GradientCircularProgress:
+    :commit: 987499d27cb325a3a5d03f6b51b75a47de93cb2a
+    :git: https://github.com/keygx/GradientCircularProgress
+
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  GradientCircularProgress: 0dbd7be2596a6f162f252597bad2f8573a52364e
 
-PODFILE CHECKSUM: 8d2bb243eefbb495f7cee63bdab679b81ce71a56
+PODFILE CHECKSUM: 1281ca16fb6d8632f0aa685608a10363116cf104
 
 COCOAPODS: 1.5.3

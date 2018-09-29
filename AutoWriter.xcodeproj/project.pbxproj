@@ -19,7 +19,6 @@
 		C4AC4EBA215752660051E1FA /* AutoWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4EB9215752660051E1FA /* AutoWriterUITests.swift */; };
 		C4BB5EFF215760C200F8D449 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB5EFE215760C200F8D449 /* ConnectionService.swift */; };
 		C4BB5F002157611F00F8D449 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BB5F012157611F00F8D449 /* Alamofire.framework */; };
-		C4BB5F022157614000F8D449 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BB5F032157614000F8D449 /* RealmSwift.framework */; };
 		C4BB5F052157628300F8D449 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB5F042157628300F8D449 /* MainViewPresenter.swift */; };
 		C4BB5F07215768D000F8D449 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB5F06215768D000F8D449 /* RequestProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -80,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4BB5F022157614000F8D449 /* RealmSwift.framework in Frameworks */,
 				C4BB5F002157611F00F8D449 /* Alamofire.framework in Frameworks */,
 				69C1FBED1412D2E3F0A908B9 /* Pods_AutoWriter.framework in Frameworks */,
 			);
@@ -265,7 +263,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = mmsc;
 				TargetAttributes = {
 					C4AC4E95215752660051E1FA = {
@@ -394,10 +392,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AutoWriter/Pods-AutoWriter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GradientCircularProgress/GradientCircularProgress.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientCircularProgress.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,6 +484,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -491,6 +492,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -541,6 +543,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -548,6 +551,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -582,14 +586,17 @@
 			baseConfigurationReference = 0B72067F5B6FDE23EE628F0E /* Pods-AutoWriter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7PTVQRPRL6;
 				INFOPLIST_FILE = AutoWriter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mmsc.AutoWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -598,14 +605,17 @@
 			baseConfigurationReference = 4364BC9570FC196552B589B1 /* Pods-AutoWriter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7PTVQRPRL6;
 				INFOPLIST_FILE = AutoWriter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mmsc.AutoWriter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
