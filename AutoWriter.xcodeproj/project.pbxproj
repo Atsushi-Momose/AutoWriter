@@ -10,6 +10,8 @@
 		0F49D1EF3A3C146EFD355278 /* Pods_AutoWriterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4962102B22E65E50F371BFEF /* Pods_AutoWriterUITests.framework */; };
 		5E580E9761D12BE91F4E81E3 /* Pods_AutoWriterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94C27274ED4F93C25168DE0 /* Pods_AutoWriterTests.framework */; };
 		69C1FBED1412D2E3F0A908B9 /* Pods_AutoWriter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C97F846757FB91FF43250E0 /* Pods_AutoWriter.framework */; };
+		C413A53121609B5300951F95 /* ProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C413A53021609B5300951F95 /* ProgressStyle.swift */; };
+		C413A53321609CAA00951F95 /* GradientCircularProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413A53221609CAA00951F95 /* GradientCircularProgress.framework */; };
 		C4AC4E9A215752660051E1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4E99215752660051E1FA /* AppDelegate.swift */; };
 		C4AC4E9C215752660051E1FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC4E9B215752660051E1FA /* MainViewController.swift */; };
 		C4AC4E9F215752660051E1FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AC4E9D215752660051E1FA /* Main.storyboard */; };
@@ -47,10 +49,13 @@
 		5C97F846757FB91FF43250E0 /* Pods_AutoWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D48E7F9F7CB41E79BB1B986 /* Pods-AutoWriterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoWriterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoWriterTests/Pods-AutoWriterTests.release.xcconfig"; sourceTree = "<group>"; };
 		B75BCDB0BF94B316CC370FA9 /* Pods-AutoWriterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoWriterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoWriterUITests/Pods-AutoWriterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C413A53021609B5300951F95 /* ProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStyle.swift; sourceTree = "<group>"; };
+		C413A53221609CAA00951F95 /* GradientCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GradientCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42FCD302157A0C90050B955 /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42FCD322157A1070050B955 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42FCD342157A12D0050B955 /* Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42FCD362157A13B0050B955 /* Discovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Discovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A90E03216095A400B3857C /* GradientCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GradientCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AC4E96215752660051E1FA /* AutoWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AC4E99215752660051E1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4AC4E9B215752660051E1FA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C413A53321609CAA00951F95 /* GradientCircularProgress.framework in Frameworks */,
 				C4BB5F002157611F00F8D449 /* Alamofire.framework in Frameworks */,
 				69C1FBED1412D2E3F0A908B9 /* Pods_AutoWriter.framework in Frameworks */,
 			);
@@ -119,6 +125,8 @@
 		C04282739C3DD79324AF0CE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C413A53221609CAA00951F95 /* GradientCircularProgress.framework */,
+				C4A90E03216095A400B3857C /* GradientCircularProgress.framework */,
 				C42FCD362157A13B0050B955 /* Discovery.framework */,
 				C42FCD342157A12D0050B955 /* Assistant.framework */,
 				C42FCD322157A1070050B955 /* Starscream.framework */,
@@ -160,6 +168,7 @@
 				C4AC4E99215752660051E1FA /* AppDelegate.swift */,
 				C4AC4E9B215752660051E1FA /* MainViewController.swift */,
 				C4BB5F042157628300F8D449 /* MainViewPresenter.swift */,
+				C413A53021609B5300951F95 /* ProgressStyle.swift */,
 				C4AC4E9D215752660051E1FA /* Main.storyboard */,
 				C4BB5EFD2157608500F8D449 /* ConnectionService */,
 				C4AC4EA0215752660051E1FA /* Assets.xcassets */,
@@ -413,6 +422,7 @@
 			files = (
 				C4BB5EFF215760C200F8D449 /* ConnectionService.swift in Sources */,
 				C4AC4E9C215752660051E1FA /* MainViewController.swift in Sources */,
+				C413A53121609B5300951F95 /* ProgressStyle.swift in Sources */,
 				C4BB5F052157628300F8D449 /* MainViewPresenter.swift in Sources */,
 				C4AC4E9A215752660051E1FA /* AppDelegate.swift in Sources */,
 				C4BB5F07215768D000F8D449 /* RequestProtocol.swift in Sources */,

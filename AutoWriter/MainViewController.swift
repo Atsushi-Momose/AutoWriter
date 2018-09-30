@@ -7,6 +7,7 @@
 
 
 import UIKit
+import GradientCircularProgress
 
 class MainViewController: UIViewController {
     
@@ -14,11 +15,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var recordButton: UIButton!
     
     let presenter = MainViewPresenter()
-    
+    let progress = GradientCircularProgress()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //presenter.getCurrencyInfo()
+        
+        let progressView = progress.show(frame: self.view.frame, message: "Loading...", style: ProgressStyle())
+        view.addSubview(progressView!)
         
         recordButton.isEnabled = false
     }

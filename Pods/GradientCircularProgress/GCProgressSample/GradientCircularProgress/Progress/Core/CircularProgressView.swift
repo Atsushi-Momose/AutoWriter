@@ -27,7 +27,7 @@ class CircularProgressView: UIView {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineHeightMultiple = 1.2
             paragraphStyle.alignment = NSTextAlignment.center
-            let attr = [NSAttributedString.Key.paragraphStyle: paragraphStyle]
+            let attr = [NSAttributedStringKey.paragraphStyle: paragraphStyle]
             let attributedString = NSMutableAttributedString(string: message, attributes: attr)
             
             messageLabel.attributedText = attributedString
@@ -75,11 +75,11 @@ class CircularProgressView: UIView {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(viewDidEnterBackground(_:)),
-                                               name: UIApplication.didEnterBackgroundNotification,
+                                               name: Notification.Name.UIApplicationDidEnterBackground,
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(viewWillEnterForeground(_:)),
-                                               name: UIApplication.willEnterForegroundNotification,
+                                               name: Notification.Name.UIApplicationWillEnterForeground,
                                                object: nil)
     }
     
